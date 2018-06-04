@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Resposividade</title>
+		<link rel="stylesheet" href="resources/css/bootstrap.css">
+		<style type="text/css">
+			#cabecalho, #rodape {
+				background-color: red;
+				height: 100px;
+			}
+
+			#menu-esquerdo, #menu-direito {
+				background-color: yellow;
+				height: 400px;
+			}
+
+			#conteudo {
+				background-color: blue;
+				height: 500px;
+			}
+
+
+			@media screen and (max-width: 768px;) {
+				#menu-direito {
+					display: none;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container" class="container"> <!-- Início da div container -->
+			<div class="row">
+				<div id="cabecalho" class="col-sm-12"></div>
+			</div>
+			<div class="row">
+				<div id="menu-esquerdo" class="col-sm-4 col-md-2"></div>
+				<div id="conteudo" class="col-sm-8 col-md"></div>
+				<div id="menu-direito"></div>			
+			</div>
+			<div class="row">
+				<div id="rodape" class="col-sm-12"></div>
+			</div>			
+		</div> <!-- fim da div container -->
+	</body>
+</html>
